@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshot Uploader",
+  "version": "1.0",
+  "description": "Takes a screenshot of the current screen and uploads it to a server.",
+  "permissions": ["scripting", "activeTab", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
